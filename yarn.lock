@@ -11261,10 +11261,10 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-proliferate@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/proliferate/-/proliferate-0.0.3.tgz#22936105e8580c37ea98c39e59bfde6b8bfccf5e"
-  integrity sha512-F/iMxhrRVd5rUpbpmakymRrIB9Zb6MY+lCeDZg9WRkR32TF4hlTFdv41loP50Uz4eSGEFLXaoSMYftkrHs9JFw==
+proliferate@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/proliferate/-/proliferate-0.0.4.tgz#2b339312ea81062d0584b9850304c1eea3997727"
+  integrity sha512-R+RjhaKFDY9qDvfaG+jHGXwJCkwGHe5VKmFJP2Sf9V3Nt4QHv0lP/T0FKkpBwEz2PL0oP2sIPOXM8xrvqlt8Mw==
 
 promise-inflight@^1.0.1:
   version "1.0.1"

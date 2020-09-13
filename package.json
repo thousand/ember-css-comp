@@ -8,7 +8,7 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.22.1",
-    "proliferate": "^0.0.3"
+    "proliferate": "^0.0.4"
   },
   "workspaces": [
     "packages/*"

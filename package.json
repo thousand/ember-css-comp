@@ -1,0 +1,14 @@
+{
+  "name": "ember-css-comp",
+  "version": "0.0.1",
+  "description": "Three ember apps with lots of components to test build and run time perf of css options",
+  "main": "index.js",
+  "author": "Bryan Levay <bryan@bryanlevay.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "proliferate": "^0.0.2"
+  },
+  "workspaces": [ "packages/*" ]
+}

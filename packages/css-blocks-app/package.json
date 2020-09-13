@@ -55,5 +55,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@css-blocks/ember": "^1.4.0",
+    "@css-blocks/ember-app": "^1.4.0"
   }
 }

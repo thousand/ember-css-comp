@@ -5,3 +5,6 @@ cssBlocksProliferation.write();
 
 const cssModulesProliferation = new Proliferation(require('./proliferations/css-modules'));
 cssModulesProliferation.write();
+
+const plainSassProliferation = new Proliferation(require('./proliferations/plain-scss'));
+plainSassProliferation.write();

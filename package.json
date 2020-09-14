@@ -14,6 +14,7 @@
     "packages/*"
   ],
   "scripts": {
-    "generate": "node gen-content.js"
+    "generate": "node gen-content.js",
+    "degenerate": "find packages -name *component*.hbs -delete && find packages -name *component*.scss -delete"
   }
 }

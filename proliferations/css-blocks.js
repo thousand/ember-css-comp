@@ -6,16 +6,23 @@ module.exports = {
 
   proliferations: [
     {
-      fileName: 'component-%ID%.hbs',
+      fileName: 'my-component-%ID%.hbs',
       filePath: 'templates/components',
-      content: '<li block:scope>%ID%</li>'
+      content: '<li block:scope block:inverted={{@invert}}>%ID%</li>'
     },
     {
-      fileName: 'component-%ID%.block.scss',
+      fileName: 'my-component-%ID%.block.scss',
       filePath: 'styles/components',
       content: function(id) {
-        const c = Math.floor(Math.random()*16777215).toString(16);
-        return `:scope { color: #${c}; } :scope:after { content: '${id}'; }`
+        const c = Math.floor(Math.random()*16777215).toString(16).padStart('6', 0);
+        let content = [
+          `$the-color: #${c};`,
+          ':scope { color: $the-color; }',
+          `:scope:after { content: '${id}'; background: $the-color; color: #fff; }`,
+          ':scope[inverted] { background: $the-color; color: #fff; }',
+          ':scope[inverted]:after { background: #000; color: $the-color; }',
+        ];
+        return content.join('\n');
       }
     }
   ],
@@ -24,7 +31,9 @@ module.exports = {
     {
       fileName: 'index.hbs',
       filePath: 'templates/',
-      content: '{{my-component-%ID%/}}',
+      content: function (id) {
+        return `{{my-component-${id}}}\n{{my-component-${id} invert=true}}`
+      },
       prefix: '<ul>',
       suffix: '</ul>'
     }

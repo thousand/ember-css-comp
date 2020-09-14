@@ -58,6 +58,11 @@
   },
   "dependencies": {
     "@css-blocks/ember": "^1.4.0",
-    "@css-blocks/ember-app": "^1.4.0"
+    "@css-blocks/ember-app": "^1.4.0",
+    "@css-blocks/eyeglass": "^1.2.0",
+    "ember-cli-eyeglass": "^7.0.2",
+    "eyeglass": "^3.0.2",
+    "proliferate": "^0.0.5",
+    "sass": "^1.26.10"
   }
 }
